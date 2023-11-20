@@ -1,0 +1,23 @@
+/* Header */
+
+header {
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding: 1rem 2rem;
+    z-index: 10;
+    background-image: url("../img/fondo.webp");
+}
+
+.logo {
+    width: 10rem;
+    background-color: #fff5ee;
+    margin: 1rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0.5rem 0rem;
+}

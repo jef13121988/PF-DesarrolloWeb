@@ -1,0 +1,36 @@
+/* Footer */
+
+footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-top: 1px solid white;
+    position: sticky;
+    bottom: 0;
+    background-color: #050301;
+}
+
+/* Que el footer deje de ser sticker para que no se junten los íconos */
+@media (max-width: 640px) {
+    footer {
+        position: static;
+    }
+}
+
+footer ul {
+    margin-top: 1rem;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+footer ul li a img {
+    height: 1.5rem;   
+}
+
+.logoWeb {
+    background-color: #fff5ee;  
+    border-radius: 1rem; 
+}

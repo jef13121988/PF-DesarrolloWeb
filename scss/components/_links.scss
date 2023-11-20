@@ -1,0 +1,26 @@
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul li a {
+    padding: 0.5rem 0.5rem;
+}
+
+/* Configuración para la página activa */
+[aria-current="page"] {
+    background-color: darkslategray;
+    border-radius: 5rem;
+}
+
+/* Hover de la página activa */
+[aria-current="page"]:hover {
+    background-color: rgb(31, 51, 51);
+}
+
+nav ul li a:hover {
+    background-color: hsla(195, 83%, 58%, 0.2);
+    border-radius: 5rem;
+}
