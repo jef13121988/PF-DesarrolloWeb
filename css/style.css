@@ -1,16 +1,16 @@
 @charset "UTF-8";
 /* Variables */
 /* Mixins */
+/* Font */
+/* Importo fuente */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 /* Reset */
 /* Reseteo de padding y margin */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
-/* Font */
-/* Importo fuente */
 /* Components */
 /* Estilo de los iframes */
 iframe {
