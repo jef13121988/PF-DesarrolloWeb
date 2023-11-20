@@ -7,6 +7,25 @@ footer {
     position: sticky;
     bottom: 0;
     background-color: #050301;
+
+    ul {
+        margin-top: 1rem;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 1rem;
+        }
+
+        a {
+            img {
+                height: 1.5rem;   
+            }
+
+        }
+
+    }
+
 }
 
 /* Que el footer deje de ser sticker para que no se junten los íconos */
@@ -16,20 +35,7 @@ footer {
     }
 }
 
-footer ul {
-    margin-top: 1rem;
-}
-
-footer ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 1rem;
-}
-
-footer ul li a img {
-    height: 1.5rem;   
-}
-
+/* Logo Scandal Footer */
 .logoWeb {
     background-color: #fff5ee;  
     border-radius: 1rem; 

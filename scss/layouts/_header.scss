@@ -1,0 +1,60 @@
+/* Header */
+
+header {
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding: 1rem 2rem;
+    z-index: 10;
+    background-image: url("../img/fondo.webp");
+
+    div {
+        nav {
+            ul {
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    margin: 0.5rem 0rem;
+
+                    a {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: white;
+                        padding: 0.5rem 0.5rem;
+
+                        &:hover {
+                            background-color: hsla(195, 83%, 58%, 0.2);
+                            border-radius: 5rem;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+/* Estilo logo navbar */
+.logo {
+    width: 10rem;
+    background-color: #fff5ee;
+    margin: 1rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+}
+
+/* Configuración para la página activa */
+[aria-current="page"] {
+    background-color: darkslategray;
+    border-radius: 5rem;
+}
+
+/* Hover de la página activa */
+[aria-current="page"]:hover {
+    background-color: rgb(31, 51, 51);
+}
