@@ -172,7 +172,6 @@ article {
   padding: 1rem;
   border: darkslategray 3px solid;
 }
-
 article p {
   background-color: #3B3C36;
   border-radius: 30px;
@@ -196,16 +195,14 @@ article p {
 form {
   margin: 10px;
 }
-
-label {
+form label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
   color: white;
 }
-
-input[type=text],
-select {
+form input[type=text],
+form select {
   display: block;
   width: 300px;
   padding: 10px;
@@ -213,18 +210,15 @@ select {
   border-radius: 10px;
   font-size: 16px;
   margin-bottom: 10px;
+  /* Contorno y relleno del formulario cuando se lo selecciona */
 }
-
-/* Contorno y relleno del formulario cuando se lo selecciona */
-input[type=text]:focus,
-select:focus,
-textarea:focus {
+form input[type=text]:focus,
+form select:focus {
   outline: 2px solid hsla(195, 83%, 58%, 0.2);
   background-color: rgb(40, 60, 70);
   color: white;
 }
-
-textarea {
+form textarea {
   display: block;
   width: 660px;
   padding: 10px;
@@ -232,16 +226,15 @@ textarea {
   border-radius: 10px;
   font-size: 16px;
   margin-bottom: 10px;
+  /* Contorno y relleno del formulario cuando se lo selecciona */
 }
-
-/* El cuadro de mensaje deja de tener tamaño fijo para convivir con el mapa */
-@media (max-width: 1440px) {
-  textarea {
-    width: 100%;
-  }
+form textarea:focus {
+  outline: 2px solid hsla(195, 83%, 58%, 0.2);
+  background-color: rgb(40, 60, 70);
+  color: white;
 }
-input[type=submit],
-input[type=reset] {
+form input[type=submit],
+form input[type=reset] {
   background-color: #333;
   color: white;
   border: 3px solid #28282B;
@@ -251,13 +244,19 @@ input[type=reset] {
   font-size: 20px;
   cursor: pointer;
   margin: 3px;
+  /* Borde y relleno de los botones cuando se los selecciona */
 }
-
-/* Borde y relleno de los botones cuando se los selecciona */
-input[type=submit]:active,
-input[type=reset]:active {
+form input[type=submit]:active,
+form input[type=reset]:active {
   background-color: #222;
   border: 3px solid darkslategray;
+}
+
+/* El cuadro de mensaje deja de tener tamaño fijo para convivir con el mapa */
+@media (max-width: 1440px) {
+  textarea {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
