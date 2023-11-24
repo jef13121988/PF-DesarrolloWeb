@@ -3,10 +3,10 @@
 footer {
     margin-top: 1rem;
     padding: 1rem;
-    border-top: 1px solid white;
+    border-top: 1px solid $bordes-layout;
     position: sticky;
     bottom: 0;
-    background-color: #050301;
+    background-color: $fondo-footer;
 
     ul {
         margin-top: 1rem;

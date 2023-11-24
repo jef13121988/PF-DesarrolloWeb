@@ -1,0 +1,28 @@
+/* Variables */
+/* Fuente */
+$fuente: "Times New Roman", Times, serif;
+/* Variables de color de fondo */
+/* Fondo Header */
+$fondo-header: url("../img/fondo.webp");
+/* Fondo Body */
+$fondo-body: #28282B;
+/* Fondo Footer */
+$fondo-footer: #050301;
+/* Fondo H1 */
+$fondo-h1-gradiente: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+$fondo-h1-liso: #131313;
+/* Fondo Textos */
+$fondo-textos: darkslategray;
+$fondo-hover: hsla(195, 83%, 58%, 0.2);
+$fondo-hover-activo: rgb(31, 51, 51);
+$fondo-parrafo: #3B3C36;
+/* Color Textos */
+$color-textos: white;
+/* Color Bordes */
+$color-bordes: $fondo-textos;
+$bordes-layout: $color-textos;
