@@ -1,9 +1,6 @@
 @charset "UTF-8";
 /* Variables */
 /* Mixins */
-/* Font */
-/* Importo fuente */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 /* Reset */
 /* Reseteo de padding y margin */
 * {
@@ -23,7 +20,7 @@ iframe {
 /* Body */
 body {
   background-color: #28282B;
-  font-family: "Roboto", sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* Header */
