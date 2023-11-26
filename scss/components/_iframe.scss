@@ -6,6 +6,8 @@ iframe {
     outline: 3px solid $color-bordes;
 }
 
+/* Ajuste de altura de Shorts a cada tamaño de pantalla */
+
 @media (max-width: 1650px) {
     .shorts {
         height: 700px;
@@ -17,6 +19,8 @@ iframe {
         height: 600px;
     }
 }
+
+/* Los Shorts no tienen que aparecer en pantallas menores a 1200px de ancho */
 
 @media (max-width: 1200px) {
     .shorts {

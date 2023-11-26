@@ -29,7 +29,7 @@ footer {
 
 }
 
-/* Que el footer deje de ser sticker para que no se junten los íconos */
+/* Que el footer deje de ser sticky para que no se junten los íconos */
 @media (max-width: 640px) {
     footer {
         position: static;

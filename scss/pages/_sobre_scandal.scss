@@ -13,6 +13,8 @@
     flex-grow: 1;
 }
 
+/* Las fotos no tienen que estar cuando aparecen los Shorts */
+
 @media (min-width: 1201px) {
     .fotoIntegrantes {
         display: none;
