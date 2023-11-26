@@ -26,6 +26,7 @@ iframe {
   outline: 3px solid darkslategray;
 }
 
+/* Ajuste de altura de Shorts a cada tamaño de pantalla */
 @media (max-width: 1650px) {
   .shorts {
     height: 700px;
@@ -36,6 +37,7 @@ iframe {
     height: 600px;
   }
 }
+/* Los Shorts no tienen que aparecer en pantallas menores a 1200px de ancho */
 @media (max-width: 1200px) {
   .shorts {
     display: none;
@@ -129,10 +131,17 @@ section {
 }
 
 .titulo {
+  color: white;
+  margin-top: 1rem;
   background-color: darkslategray;
   border-radius: 30px;
   font-size: 30px;
   padding: 5px;
+}
+
+/* Para que los títulos de la Discografía y los Videos sean responsive */
+.tituloResponsive {
+  flex-grow: 1;
 }
 
 /* Footer */
@@ -156,7 +165,7 @@ footer ul li a img {
   height: 1.5rem;
 }
 
-/* Que el footer deje de ser sticker para que no se junten los íconos */
+/* Que el footer deje de ser sticky para que no se junten los íconos */
 @media (max-width: 640px) {
   footer {
     position: static;
@@ -214,6 +223,7 @@ article p {
   flex-grow: 1;
 }
 
+/* Las fotos no tienen que estar cuando aparecen los Shorts */
 @media (min-width: 1201px) {
   .fotoIntegrantes {
     display: none;

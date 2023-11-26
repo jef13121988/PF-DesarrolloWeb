@@ -37,8 +37,16 @@ section {
 }
 
 .titulo {
+    color: $color-textos;
+    margin-top: 1rem;
     background-color: $fondo-textos;
     border-radius: 30px;
     font-size: 30px;
     padding: 5px;
+}
+
+/* Para que los títulos de la Discografía y los Videos sean responsive */
+
+.tituloResponsive {
+    flex-grow: 1;
 }
