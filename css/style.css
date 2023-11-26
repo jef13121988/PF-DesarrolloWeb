@@ -26,6 +26,21 @@ iframe {
   outline: 3px solid darkslategray;
 }
 
+@media (max-width: 1650px) {
+  .shorts {
+    height: 700px;
+  }
+}
+@media (max-width: 1500px) {
+  .shorts {
+    height: 600px;
+  }
+}
+@media (max-width: 1200px) {
+  .shorts {
+    display: none;
+  }
+}
 /* Layouts */
 /* Body */
 body {
@@ -196,8 +211,14 @@ article p {
   background-color: #3B3C36;
   border-radius: 30px;
   padding: 1rem;
+  flex-grow: 1;
 }
 
+@media (min-width: 1201px) {
+  .fotoIntegrantes {
+    display: none;
+  }
+}
 /* Formulario */
 form {
   margin: 10px;

@@ -5,3 +5,21 @@ iframe {
     width: 100%;
     outline: 3px solid $color-bordes;
 }
+
+@media (max-width: 1650px) {
+    .shorts {
+        height: 700px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .shorts {
+        height: 600px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .shorts {
+        display: none;
+    }
+}

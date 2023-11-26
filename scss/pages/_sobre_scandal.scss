@@ -10,4 +10,11 @@
     background-color: $fondo-parrafo;
     border-radius: 30px;
     padding: 1rem;
+    flex-grow: 1;
+}
+
+@media (min-width: 1201px) {
+    .fotoIntegrantes {
+        display: none;
+    }
 }
