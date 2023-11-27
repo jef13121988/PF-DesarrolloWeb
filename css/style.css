@@ -27,6 +27,9 @@ iframe {
 }
 
 /* Ajuste de altura de Shorts a cada tamaño de pantalla */
+.shorts {
+  /* Los Shorts no tienen que aparecer en pantallas menores a 1200px de ancho */
+}
 @media (max-width: 1650px) {
   .shorts {
     height: 700px;
@@ -37,12 +40,12 @@ iframe {
     height: 600px;
   }
 }
-/* Los Shorts no tienen que aparecer en pantallas menores a 1200px de ancho */
 @media (max-width: 1200px) {
   .shorts {
     display: none;
   }
 }
+
 /* Layouts */
 /* Body */
 body {
@@ -152,6 +155,7 @@ footer {
   position: sticky;
   bottom: 0;
   background-color: #050301;
+  /* Que el footer deje de ser sticky para que no se junten los íconos */
 }
 footer ul {
   margin-top: 1rem;
@@ -164,13 +168,12 @@ footer ul li {
 footer ul li a img {
   height: 1.5rem;
 }
-
-/* Que el footer deje de ser sticky para que no se junten los íconos */
 @media (max-width: 640px) {
   footer {
     position: static;
   }
 }
+
 /* Logo Scandal Footer */
 .logoWeb {
   background-color: #fff5ee;
@@ -214,6 +217,12 @@ article p {
   border-radius: 300px;
   width: 100%;
   filter: drop-shadow(2px 2px 0.1rem rgb(49, 0, 10));
+  /* Las fotos no tienen que estar cuando aparecen los Shorts */
+}
+@media (min-width: 1201px) {
+  .fotoIntegrantes {
+    display: none;
+  }
 }
 
 .descripcion {
@@ -223,12 +232,6 @@ article p {
   flex-grow: 1;
 }
 
-/* Las fotos no tienen que estar cuando aparecen los Shorts */
-@media (min-width: 1201px) {
-  .fotoIntegrantes {
-    display: none;
-  }
-}
 /* Formulario */
 form {
   margin: 10px;
@@ -265,11 +268,17 @@ form textarea {
   font-size: 16px;
   margin-bottom: 10px;
   /* Contorno y relleno del formulario cuando se lo selecciona */
+  /* El cuadro de mensaje deja de tener tamaño fijo para convivir con el mapa */
 }
 form textarea:focus {
   outline: 2px solid hsla(195, 83%, 58%, 0.2);
   background-color: rgb(40, 60, 70);
   color: white;
+}
+@media (max-width: 1440px) {
+  form textarea {
+    width: 100%;
+  }
 }
 form input[type=submit],
 form input[type=reset] {
@@ -288,13 +297,6 @@ form input[type=submit]:active,
 form input[type=reset]:active {
   background-color: #222;
   border: 3px solid darkslategray;
-}
-
-/* El cuadro de mensaje deja de tener tamaño fijo para convivir con el mapa */
-@media (max-width: 1440px) {
-  textarea {
-    width: 100%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

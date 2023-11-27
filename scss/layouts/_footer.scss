@@ -27,13 +27,11 @@ footer {
 
     }
 
-}
-
-/* Que el footer deje de ser sticky para que no se junten los íconos */
-@media (max-width: 640px) {
-    footer {
-        position: static;
+    /* Que el footer deje de ser sticky para que no se junten los íconos */
+    @media (max-width: 640px) {
+            position: static;
     }
+
 }
 
 /* Logo Scandal Footer */

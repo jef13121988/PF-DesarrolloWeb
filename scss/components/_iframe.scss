@@ -8,22 +8,21 @@ iframe {
 
 /* Ajuste de altura de Shorts a cada tamaño de pantalla */
 
-@media (max-width: 1650px) {
-    .shorts {
+.shorts {
+    
+    @media (max-width: 1650px) {
         height: 700px;
     }
-}
 
-@media (max-width: 1500px) {
-    .shorts {
+    @media (max-width: 1500px) {
         height: 600px;
     }
-}
 
-/* Los Shorts no tienen que aparecer en pantallas menores a 1200px de ancho */
+    /* Los Shorts no tienen que aparecer en pantallas menores a 1200px de ancho */
 
-@media (max-width: 1200px) {
-    .shorts {
-        display: none;
+    @media (max-width: 1200px) {
+            display: none;
     }
+
 }
+

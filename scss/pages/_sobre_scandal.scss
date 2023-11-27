@@ -4,6 +4,13 @@
     border-radius: 300px;
     width: 100%;
     filter: drop-shadow(2px 2px 0.1rem rgb(49, 0, 10));
+
+    /* Las fotos no tienen que estar cuando aparecen los Shorts */
+
+    @media (min-width: 1201px) {
+            display: none;
+    }
+
 }
 
 .descripcion {
@@ -11,12 +18,4 @@
     border-radius: 30px;
     padding: 1rem;
     flex-grow: 1;
-}
-
-/* Las fotos no tienen que estar cuando aparecen los Shorts */
-
-@media (min-width: 1201px) {
-    .fotoIntegrantes {
-        display: none;
-    }
 }

@@ -46,7 +46,12 @@ form {
             color: $color-textos;
         }
 
-    }
+        /* El cuadro de mensaje deja de tener tamaño fijo para convivir con el mapa */
+    @media (max-width: 1440px) {
+            width: 100%;
+        }
+        
+}
 
     input[type=submit],
     input[type=reset] {
@@ -71,9 +76,3 @@ form {
 
 }
 
-/* El cuadro de mensaje deja de tener tamaño fijo para convivir con el mapa */
-@media (max-width: 1440px) {
-    textarea {
-        width: 100%;
-    }
-}
