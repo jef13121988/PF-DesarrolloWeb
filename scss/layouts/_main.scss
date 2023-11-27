@@ -6,17 +6,16 @@ main {
 
 h1 {
     text-align: center;
+    color: $color-textos;
+    margin-bottom: 2rem;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 20px;
 
     /* Fondo especial para títulos */
     background: $fondo-h1-gradiente;
     background-color: $fondo-h1-liso;
     background-size: 20px 20px;
-
-    color: $color-textos;
-    margin-bottom: 30px;
-    font-size: 50px;
-    text-transform: uppercase;
-    padding: 20px;
 }
 
 h2 {
@@ -24,6 +23,7 @@ h2 {
     color: $color-textos;
     font-size: 30px;
     text-decoration: underline;
+    margin-top: 2rem;
 }
 
 p {
@@ -31,9 +31,7 @@ p {
     margin-top: 1rem;
 }
 
-section {
-    text-align: center;
-}
+/* Configuración de los títulos h3 */
 
 .titulo {
     color: $color-textos;
@@ -42,6 +40,7 @@ section {
     border-radius: 30px;
     font-size: 30px;
     padding: 5px;
+    text-align: center;
 }
 
 /* Para que los títulos de la Discografía y los Videos sean responsive */
@@ -60,4 +59,18 @@ section {
     margin: 5px;
     border-radius: 300px;
     filter: drop-shadow(0 0 1rem darkslategray);
+}
+
+/* Formato para todos los párrafos */
+
+.parrafo {
+    background-color: $fondo-parrafo;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+/* Formato específico para la descripción */
+
+.descripcion {
+    flex-grow: 1;
 }

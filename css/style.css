@@ -105,15 +105,15 @@ main {
 
 h1 {
   text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 50px;
+  text-transform: uppercase;
+  padding: 20px;
   /* Fondo especial para títulos */
   background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
   background-color: #131313;
   background-size: 20px 20px;
-  color: white;
-  margin-bottom: 30px;
-  font-size: 50px;
-  text-transform: uppercase;
-  padding: 20px;
 }
 
 h2 {
@@ -121,6 +121,7 @@ h2 {
   color: white;
   font-size: 30px;
   text-decoration: underline;
+  margin-top: 2rem;
 }
 
 p {
@@ -128,10 +129,7 @@ p {
   margin-top: 1rem;
 }
 
-section {
-  text-align: center;
-}
-
+/* Configuración de los títulos h3 */
 .titulo {
   color: white;
   margin-top: 1rem;
@@ -139,6 +137,7 @@ section {
   border-radius: 30px;
   font-size: 30px;
   padding: 5px;
+  text-align: center;
 }
 
 /* Para que los títulos de la Discografía y los Videos sean responsive */
@@ -155,6 +154,18 @@ section {
   margin: 5px;
   border-radius: 300px;
   filter: drop-shadow(0 0 1rem darkslategray);
+}
+
+/* Formato para todos los párrafos */
+.parrafo {
+  background-color: #3B3C36;
+  border-radius: 30px;
+  padding: 1rem;
+}
+
+/* Formato específico para la descripción */
+.descripcion {
+  flex-grow: 1;
 }
 
 /* Footer */
@@ -214,13 +225,6 @@ footer ul li a img {
   .fotoIntegrantes {
     display: none;
   }
-}
-
-.parrafo {
-  background-color: #3B3C36;
-  border-radius: 30px;
-  padding: 1rem;
-  flex-grow: 1;
 }
 
 /* Formulario */
