@@ -145,6 +145,9 @@ section {
 /* Para que los títulos de la Discografía y los Videos sean responsive */
 .tituloResponsive {
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Footer */
