@@ -119,7 +119,6 @@ h1 {
 h2 {
   text-align: center;
   color: white;
-  margin: 20px 0;
   font-size: 30px;
   text-decoration: underline;
 }
@@ -148,6 +147,14 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Clase para las imágenes dentro del aside */
+.fotoSola {
+  width: 100%;
+  margin: 5px;
+  border-radius: 300px;
+  filter: drop-shadow(0 0 1rem darkslategray);
 }
 
 /* Footer */
@@ -192,27 +199,8 @@ footer ul li a img {
   filter: drop-shadow(0 0 1rem darkslategray);
 }
 
-.fotoSola {
-  width: 100%;
-  margin: 5px;
-  border-radius: 300px;
-  filter: drop-shadow(0 0 1rem darkslategray);
-}
-
 .cajaFotos {
   text-align: center;
-}
-
-article {
-  background-color: #2d2e29;
-  border-radius: 30px;
-  padding: 1rem;
-  border: darkslategray 3px solid;
-}
-article p {
-  background-color: #3B3C36;
-  border-radius: 30px;
-  padding: 1rem;
 }
 
 /* Integrantes */
@@ -228,7 +216,7 @@ article p {
   }
 }
 
-.descripcion {
+.parrafo {
   background-color: #3B3C36;
   border-radius: 30px;
   padding: 1rem;

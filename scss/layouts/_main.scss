@@ -22,7 +22,6 @@ h1 {
 h2 {
     text-align: center;
     color: $color-textos;
-    margin: 20px 0;
     font-size: 30px;
     text-decoration: underline;
 }
@@ -52,4 +51,13 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Clase para las imágenes dentro del aside */
+
+.fotoSola {
+    width: 100%;
+    margin: 5px;
+    border-radius: 300px;
+    filter: drop-shadow(0 0 1rem darkslategray);
 }

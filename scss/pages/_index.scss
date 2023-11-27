@@ -7,27 +7,20 @@
     filter: drop-shadow(0 0 1rem darkslategray);
 }
 
-.fotoSola {
-    width: 100%;
-    margin: 5px;
-    border-radius: 300px;
-    filter: drop-shadow(0 0 1rem darkslategray);
-}
-
 .cajaFotos {
     text-align: center;
 }
 
-article {
-    background-color: #2d2e29;
-    border-radius: 30px;
-    padding: 1rem;
-    border: darkslategray 3px solid;
+// article {
+//     background-color: #2d2e29;
+//     border-radius: 30px;
+//     padding: 1rem;
+//     border: darkslategray 3px solid;
 
-    p {
-        background-color: $fondo-parrafo;
-        border-radius: 30px;
-        padding: 1rem;
-    }
+//     p {
+//         background-color: $fondo-parrafo;
+//         border-radius: 30px;
+//         padding: 1rem;
+//     }
 
-}
+// }
