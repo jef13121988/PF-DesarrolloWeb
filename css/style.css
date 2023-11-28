@@ -107,21 +107,24 @@ h1 {
   text-align: center;
   color: white;
   margin-bottom: 2rem;
-  font-size: 50px;
+  font-size: 3rem;
+  font-weight: bold;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 1rem;
   /* Fondo especial para títulos */
   background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
   background-color: #131313;
-  background-size: 20px 20px;
+  background-size: 1rem 1rem;
 }
 
 h2 {
   text-align: center;
   color: white;
-  font-size: 30px;
-  text-decoration: underline;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
   margin-top: 2rem;
+  background-image: radial-gradient(ellipse 40% 50%, black, #28282B);
 }
 
 p {
@@ -135,8 +138,8 @@ p {
   margin-top: 1rem;
   background-color: darkslategray;
   border-radius: 30px;
-  font-size: 30px;
-  padding: 5px;
+  font-size: 2rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
@@ -180,12 +183,12 @@ footer {
   /* Que el footer deje de ser sticky para que no se junten los íconos */
 }
 footer ul {
-  margin-top: 1rem;
+  margin-bottom: 0rem;
 }
 footer ul li {
   list-style: none;
   display: inline-block;
-  margin: 0 1rem;
+  margin: 0.5rem 0.5rem;
 }
 footer ul li a img {
   height: 1.5rem;
@@ -194,6 +197,9 @@ footer ul li a img {
   footer {
     position: static;
   }
+}
+footer p {
+  margin: 0.5rem 0;
 }
 
 /* Logo Scandal Footer */
@@ -228,6 +234,10 @@ footer ul li a img {
   }
 }
 
+a img {
+  height: 1.5rem;
+}
+
 /* Formulario */
 form {
   margin: 10px;
@@ -245,7 +255,7 @@ form select {
   padding: 10px;
   border: 3px solid darkslategray;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 10px;
   /* Contorno y relleno del formulario cuando se lo selecciona */
 }
@@ -261,7 +271,7 @@ form textarea {
   padding: 10px;
   border: 3px solid darkslategray;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 10px;
   /* Contorno y relleno del formulario cuando se lo selecciona */
   /* El cuadro de mensaje deja de tener tamaño fijo para convivir con el mapa */
@@ -284,7 +294,7 @@ form input[type=reset] {
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 1.25rem;
   cursor: pointer;
   margin: 3px;
   /* Borde y relleno de los botones cuando se los selecciona */

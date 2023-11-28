@@ -9,12 +9,12 @@ footer {
     background-color: $fondo-footer;
 
     ul {
-        margin-top: 1rem;
+        margin-bottom: 0rem;
 
         li {
             list-style: none;
             display: inline-block;
-            margin: 0 1rem;
+            margin: 0.5rem 0.5rem;
 
             a {
                 img {
@@ -30,6 +30,10 @@ footer {
     /* Que el footer deje de ser sticky para que no se junten los íconos */
     @media (max-width: 640px) {
             position: static;
+    }
+
+    p {
+        margin: 0.5rem 0;
     }
 
 }

@@ -8,22 +8,25 @@ h1 {
     text-align: center;
     color: $color-textos;
     margin-bottom: 2rem;
-    font-size: 50px;
+    font-size: 3rem;
+    font-weight: bold;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 1rem;
 
     /* Fondo especial para títulos */
     background: $fondo-h1-gradiente;
     background-color: $fondo-h1-liso;
-    background-size: 20px 20px;
+    background-size: 1rem 1rem;
 }
 
 h2 {
     text-align: center;
     color: $color-textos;
-    font-size: 30px;
-    text-decoration: underline;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
     margin-top: 2rem;
+    background-image: radial-gradient(ellipse 40% 50%, black, $fondo-body);
 }
 
 p {
@@ -38,8 +41,8 @@ p {
     margin-top: 1rem;
     background-color: $fondo-textos;
     border-radius: 30px;
-    font-size: 30px;
-    padding: 5px;
+    font-size: 2rem;
+    padding: 0.5rem;
     text-align: center;
 }
 
