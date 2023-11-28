@@ -166,6 +166,7 @@ p {
 /* Formato específico para la descripción */
 .descripcion {
   flex-grow: 1;
+  text-align: center;
 }
 
 /* Footer */
