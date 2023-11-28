@@ -1,8 +1,7 @@
-/* Integrantes */
+/* Sobre Scandal */
 
 .fotoIntegrantes {
-    border-radius: 300px;
-    width: 100%;
+    @include estiloFotos(100%, 0px, 300px);
     filter: drop-shadow(2px 2px 0.1rem rgb(49, 0, 10));
 
     /* Las fotos no tienen que estar cuando aparecen los Shorts */
@@ -11,11 +10,24 @@
             display: none;
     }
 
+    &:hover {
+        opacity: 90%;
+    }
+
 }
 
-a {
-    img {
-        height: 1.5rem;   
+section {
+    div {
+        div{
+            a {
+                img {
+                    height: 1.5rem;   
+                }
+            
+            }
+
+        }
+
     }
 
 }

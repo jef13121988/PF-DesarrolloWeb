@@ -11,9 +11,7 @@ header {
         nav {
             ul {
                 li {
-                    list-style: none;
-                    display: inline-block;
-                    margin: 0.5rem 0rem;
+                    @include paraLista(0.5rem, 0rem);
 
                     a {
                         text-decoration: none;
@@ -21,10 +19,10 @@ header {
                         font-weight: bold;
                         color: $color-textos;
                         padding: 0.5rem 0.5rem;
+                        transition: all 1s;
 
                         &:hover {
-                            background-color: $fondo-hover;
-                            border-radius: 5rem;
+                            @include listaHover($fondo-hover);
                         }
 
                     }
@@ -46,12 +44,34 @@ header {
     margin: 1rem;
     padding: 0.2rem 0.5rem;
     border-radius: 1rem;
+
+    /* Animación Logo */
+
+    @keyframes opacityLogo {
+        from {
+            opacity: 0.1;
+        }
+    
+        to {
+            opacity: 1;
+        }
+    
+    }
+    
+    /* Nombre del keyframe */
+    animation-name: opacityLogo;
+
+    /* Cantidad de repeticiones */
+    animation-iteration-count: 1;
+
+    /* Duración de la animación */
+    animation-duration: 3s;
+
 }
 
 /* Configuración para la página activa */
 [aria-current="page"] {
-    background-color: $fondo-textos;
-    border-radius: 5rem;
+    @include listaHover($fondo-textos);
 }
 
 /* Hover de la página activa */

@@ -1,1 +1,51 @@
-// poner mixins para contacto y para fotos
+/* Mixin para estilo de listas */
+
+@mixin paraLista($margenX, $margenY) {
+    list-style: none;
+    display: inline-block;
+    margin: $margenX $margenY;
+}
+
+/* Mixin para estilo de hover */
+@mixin listaHover($colorFondo) {
+    background-color: $colorFondo;
+    border-radius: 5rem;
+}
+
+/* Mixin para estilo de h# */
+
+@mixin estiloH($tamanoLetra) {
+    color: $color-textos;
+    text-align: center;
+    font-weight: bold;
+    font-size: $tamanoLetra;
+}
+
+/* Mixin para estilo de fotos */
+
+@mixin estiloFotos($ancho, $margen, $borde) {
+    width: $ancho;
+    margin: $margen;
+    border-radius: $borde;
+}
+
+/* Mixin para Formulario de Contacto */
+
+@mixin estiloFormulario($anchoFormulario) {
+    display: block;
+    width: $anchoFormulario;
+    padding: 10px;
+    border: 3px solid $color-bordes;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    transition: all 1s;
+}
+
+/* Mixin para focus en Formulario de Contacto */
+
+@mixin estiloFocusFormulario {
+    outline: 2px solid hsla(195, 83%, 58%, 0.2);
+    background-color: rgba(40, 60, 70);
+    color: $color-textos;
+}

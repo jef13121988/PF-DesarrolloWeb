@@ -12,38 +12,22 @@ form {
 
     input[type=text],
     select {
-        display: block;
-        width: 300px;
-        padding: 10px;
-        border: 3px solid $color-bordes;
-        border-radius: 10px;
-        font-size: 1rem;
-        margin-bottom: 10px;
+        @include estiloFormulario(300px);
 
         /* Contorno y relleno del formulario cuando se lo selecciona */
         &:focus { 
-            outline: 2px solid hsla(195, 83%, 58%, 0.2);
-            background-color: rgba(40, 60, 70);
-            color: $color-textos;
+            @include estiloFocusFormulario;
         }
 
     }
 
     textarea {
-        display: block;
-        width: 660px;
-        padding: 10px;
-        border: 3px solid $color-bordes;
-        border-radius: 10px;
-        font-size: 1rem;
-        margin-bottom: 10px;
+        @include estiloFormulario(660px);
 
         /* Contorno y relleno del formulario cuando se lo selecciona */
 
         &:focus { 
-            outline: 2px solid hsla(195, 83%, 58%, 0.2);
-            background-color: rgba(40, 60, 70);
-            color: $color-textos;
+            @include estiloFocusFormulario;
         }
 
         /* El cuadro de mensaje deja de tener tamaño fijo para convivir con el mapa */
@@ -64,6 +48,7 @@ form {
         font-size: 1.25rem;
         cursor: pointer;
         margin: 3px;
+        transition: all 1s;
 
         /* Borde y relleno de los botones cuando se los selecciona */
 

@@ -11,6 +11,12 @@
 /* Color Textos */
 /* Color Bordes */
 /* Mixins */
+/* Mixin para estilo de listas */
+/* Mixin para estilo de hover */
+/* Mixin para estilo de h# */
+/* Mixin para estilo de fotos */
+/* Mixin para Formulario de Contacto */
+/* Mixin para focus en Formulario de Contacto */
 /* Reset */
 /* Reseteo de padding y margin */
 * {
@@ -72,6 +78,7 @@ header div nav ul li a {
   font-weight: bold;
   color: white;
   padding: 0.5rem 0.5rem;
+  transition: all 1s;
 }
 header div nav ul li a:hover {
   background-color: hsla(195, 83%, 58%, 0.2);
@@ -85,6 +92,21 @@ header div nav ul li a:hover {
   margin: 1rem;
   padding: 0.2rem 0.5rem;
   border-radius: 1rem;
+  /* Animación Logo */
+  /* Nombre del keyframe */
+  animation-name: opacityLogo;
+  /* Cantidad de repeticiones */
+  animation-iteration-count: 1;
+  /* Duración de la animación */
+  animation-duration: 3s;
+}
+@keyframes opacityLogo {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Configuración para la página activa */
@@ -104,11 +126,11 @@ main {
 }
 
 h1 {
-  text-align: center;
   color: white;
-  margin-bottom: 2rem;
-  font-size: 3rem;
+  text-align: center;
   font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
   padding: 1rem;
   /* Fondo especial para títulos */
@@ -118,10 +140,10 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   color: white;
-  font-size: 2rem;
+  text-align: center;
   font-weight: bold;
+  font-size: 2rem;
   padding: 1rem;
   margin-top: 2rem;
   background-image: radial-gradient(ellipse 40% 50%, black, #28282B);
@@ -135,12 +157,13 @@ p {
 /* Configuración de los títulos h3 */
 .titulo {
   color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
   margin-top: 1rem;
   background-color: darkslategray;
   border-radius: 30px;
-  font-size: 2rem;
   padding: 0.5rem;
-  text-align: center;
 }
 
 /* Para que los títulos de la Discografía y los Videos sean responsive */
@@ -157,6 +180,9 @@ p {
   margin: 5px;
   border-radius: 300px;
   filter: drop-shadow(0 0 1rem darkslategray);
+}
+.fotoSola:hover {
+  opacity: 90%;
 }
 
 /* Formato para todos los párrafos */
@@ -216,15 +242,19 @@ footer p {
   border-radius: 100px;
   filter: drop-shadow(0 0 1rem darkslategray);
 }
+.fotoVivo:hover {
+  opacity: 90%;
+}
 
 .cajaFotos {
   text-align: center;
 }
 
-/* Integrantes */
+/* Sobre Scandal */
 .fotoIntegrantes {
-  border-radius: 300px;
   width: 100%;
+  margin: 0px;
+  border-radius: 300px;
   filter: drop-shadow(2px 2px 0.1rem rgb(49, 0, 10));
   /* Las fotos no tienen que estar cuando aparecen los Shorts */
 }
@@ -233,8 +263,11 @@ footer p {
     display: none;
   }
 }
+.fotoIntegrantes:hover {
+  opacity: 90%;
+}
 
-a img {
+section div div a img {
   height: 1.5rem;
 }
 
@@ -257,6 +290,7 @@ form select {
   border-radius: 10px;
   font-size: 1rem;
   margin-bottom: 10px;
+  transition: all 1s;
   /* Contorno y relleno del formulario cuando se lo selecciona */
 }
 form input[type=text]:focus,
@@ -273,6 +307,7 @@ form textarea {
   border-radius: 10px;
   font-size: 1rem;
   margin-bottom: 10px;
+  transition: all 1s;
   /* Contorno y relleno del formulario cuando se lo selecciona */
   /* El cuadro de mensaje deja de tener tamaño fijo para convivir con el mapa */
 }
@@ -297,6 +332,7 @@ form input[type=reset] {
   font-size: 1.25rem;
   cursor: pointer;
   margin: 3px;
+  transition: all 1s;
   /* Borde y relleno de los botones cuando se los selecciona */
 }
 form input[type=submit]:active,

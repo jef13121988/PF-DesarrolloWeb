@@ -12,9 +12,7 @@ footer {
         margin-bottom: 0rem;
 
         li {
-            list-style: none;
-            display: inline-block;
-            margin: 0.5rem 0.5rem;
+            @include paraLista(0.5rem, 0.5rem);
 
             a {
                 img {

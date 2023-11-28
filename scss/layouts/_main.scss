@@ -5,11 +5,8 @@ main {
 }
 
 h1 {
-    text-align: center;
-    color: $color-textos;
+    @include estiloH(3rem);
     margin-bottom: 2rem;
-    font-size: 3rem;
-    font-weight: bold;
     text-transform: uppercase;
     padding: 1rem;
 
@@ -20,10 +17,7 @@ h1 {
 }
 
 h2 {
-    text-align: center;
-    color: $color-textos;
-    font-size: 2rem;
-    font-weight: bold;
+    @include estiloH(2rem);
     padding: 1rem;
     margin-top: 2rem;
     background-image: radial-gradient(ellipse 40% 50%, black, $fondo-body);
@@ -37,13 +31,11 @@ p {
 /* Configuración de los títulos h3 */
 
 .titulo {
-    color: $color-textos;
+    @include estiloH(2rem);
     margin-top: 1rem;
     background-color: $fondo-textos;
     border-radius: 30px;
-    font-size: 2rem;
     padding: 0.5rem;
-    text-align: center;
 }
 
 /* Para que los títulos de la Discografía y los Videos sean responsive */
@@ -58,10 +50,13 @@ p {
 /* Clase para las imágenes dentro del aside */
 
 .fotoSola {
-    width: 100%;
-    margin: 5px;
-    border-radius: 300px;
+    @include estiloFotos(100%, 5px, 300px);
     filter: drop-shadow(0 0 1rem darkslategray);
+
+    &:hover {
+        opacity: 90%;
+    }
+
 }
 
 /* Formato para todos los párrafos */
