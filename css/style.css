@@ -292,12 +292,19 @@ form select {
   margin-bottom: 10px;
   transition: all 1s;
   /* Contorno y relleno del formulario cuando se lo selecciona */
+  /* Responsive para pantallas menores a 396px */
 }
 form input[type=text]:focus,
 form select:focus {
   outline: 2px solid hsla(195, 83%, 58%, 0.2);
   background-color: rgb(40, 60, 70);
   color: white;
+}
+@media (max-width: 396px) {
+  form input[type=text],
+  form select {
+    width: 100%;
+  }
 }
 form textarea {
   display: block;
