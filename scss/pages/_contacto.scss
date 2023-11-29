@@ -30,7 +30,6 @@ form {
         @include estiloFormulario(660px);
 
         /* Contorno y relleno del formulario cuando se lo selecciona */
-
         &:focus { 
             @include estiloFocusFormulario;
         }
@@ -56,7 +55,6 @@ form {
         transition: all 1s;
 
         /* Borde y relleno de los botones cuando se los selecciona */
-
         &:active {
             background-color: #222;
             border: 3px solid $color-bordes;

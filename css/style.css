@@ -137,6 +137,12 @@ h1 {
   background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
   background-color: #131313;
   background-size: 1rem 1rem;
+  /* Se ajusta el tamaño de la fuente para pantallas menores a 440px */
+}
+@media (max-width: 440px) {
+  h1 {
+    font-size: 1.3rem;
+  }
 }
 
 h2 {
@@ -147,6 +153,12 @@ h2 {
   padding: 1rem;
   margin-top: 2rem;
   background-image: radial-gradient(ellipse 40% 50%, black, #28282B);
+  /* Se ajusta el tamaño de la fuente para pantallas menores a 440px */
+}
+@media (max-width: 440px) {
+  h2 {
+    font-size: 1.15rem;
+  }
 }
 
 p {
@@ -164,6 +176,12 @@ p {
   background-color: darkslategray;
   border-radius: 30px;
   padding: 0.5rem;
+  /* Se ajusta el tamaño de la fuente para pantallas menores a 440px */
+}
+@media (max-width: 440px) {
+  .titulo {
+    font-size: 1.15rem;
+  }
 }
 
 /* Para que los títulos de la Discografía y los Videos sean responsive */
