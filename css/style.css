@@ -8,6 +8,7 @@
 /* Fondo Footer */
 /* Fondo H1 */
 /* Fondo Textos */
+/* Otras variables de color */
 /* Color Textos */
 /* Color Bordes */
 /* Mixins */
@@ -106,6 +107,7 @@ header div nav ul li a:hover {
   padding: 0.2rem 0.5rem;
   border-radius: 1rem;
   /* Animación Logo */
+  /* Keyframe para la animación */
   /* Nombre del keyframe */
   animation-name: opacityLogo;
   /* Cantidad de repeticiones */
@@ -158,7 +160,7 @@ h1 {
   }
 }
 
-h2 {
+h2, h3 {
   color: white;
   text-align: center;
   font-weight: bold;
@@ -169,7 +171,7 @@ h2 {
   /* Se ajusta el tamaño de la fuente para pantallas menores a 440px */
 }
 @media (max-width: 440px) {
-  h2 {
+  h2, h3 {
     font-size: 1.15rem;
   }
 }
@@ -179,7 +181,7 @@ p {
   margin-top: 1rem;
 }
 
-/* Configuración de los títulos h3 */
+/* Configuración de los títulos h3 de las cards */
 .titulo {
   color: white;
   text-align: center;
@@ -211,6 +213,7 @@ p {
   margin: 5px;
   border-radius: 300px;
   filter: drop-shadow(0 0 1rem darkslategray);
+  /* Hover para las imágenes del aside */
 }
 .fotoSola:hover {
   opacity: 90%;
@@ -267,27 +270,32 @@ footer p {
 
 /* Pages */
 /* Index */
+/* Clase para las fotos del Index */
 .fotoVivo {
   width: 30%;
   margin: 5px;
   border-radius: 100px;
   filter: drop-shadow(0 0 1rem darkslategray);
+  /* Efecto para las fotos */
 }
 .fotoVivo:hover {
   opacity: 90%;
 }
 
+/* Clase para el contenedor de las fotos */
 .cajaFotos {
   text-align: center;
 }
 
 /* Sobre Scandal */
+/* Clase para las fotos de las integrantes */
 .fotoIntegrantes {
   width: 100%;
   margin: 0px;
   border-radius: 300px;
   filter: drop-shadow(2px 2px 0.1rem rgb(49, 0, 10));
   /* Las fotos no tienen que estar cuando aparecen los Shorts */
+  /* Efecto para las fotos de las integrantes */
 }
 @media (min-width: 1201px) {
   .fotoIntegrantes {
@@ -298,6 +306,7 @@ footer p {
   opacity: 90%;
 }
 
+/* Tamaño íconos de redes sociales dentro de la card de cada integrante */
 section div div a img {
   height: 1.5rem;
 }

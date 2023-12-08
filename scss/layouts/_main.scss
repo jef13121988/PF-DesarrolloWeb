@@ -22,7 +22,7 @@ h1 {
 
 }
 
-h2 {
+h2, h3 {
     @include estiloH(2rem);
     padding: 1rem;
     margin-top: 2rem;
@@ -40,8 +40,7 @@ p {
     margin-top: 1rem;
 }
 
-/* Configuración de los títulos h3 */
-
+/* Configuración de los títulos h3 de las cards */
 .titulo {
     @include estiloH(2rem);
     margin-top: 1rem;
@@ -57,7 +56,6 @@ p {
 }
 
 /* Para que los títulos de la Discografía y los Videos sean responsive */
-
 .tituloResponsive {
     flex-grow: 1;
     display: flex;
@@ -66,11 +64,11 @@ p {
 }
 
 /* Clase para las imágenes dentro del aside */
-
 .fotoSola {
     @include estiloFotos(100%, 5px, 300px);
     filter: drop-shadow(0 0 1rem darkslategray);
 
+    /* Hover para las imágenes del aside */
     &:hover {
         opacity: 90%;
     }
@@ -78,7 +76,6 @@ p {
 }
 
 /* Formato para todos los párrafos */
-
 .parrafo {
     background-color: $fondo-parrafo;
     border-radius: 30px;
@@ -86,7 +83,6 @@ p {
 }
 
 /* Formato específico para la descripción */
-
 .descripcion {
     flex-grow: 1;
     text-align: center;

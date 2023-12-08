@@ -1,15 +1,18 @@
 /* Index */
 
+/* Clase para las fotos del Index */
 .fotoVivo {
     @include estiloFotos(30%, 5px, 100px);
     filter: drop-shadow(0 0 1rem darkslategray);
     
+    /* Efecto para las fotos */
     &:hover {
         opacity: 90%;
     }
 
 }
 
+/* Clase para el contenedor de las fotos */
 .cajaFotos {
     text-align: center;
 }

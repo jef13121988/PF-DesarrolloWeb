@@ -1,21 +1,23 @@
 /* Sobre Scandal */
 
+/* Clase para las fotos de las integrantes */
 .fotoIntegrantes {
     @include estiloFotos(100%, 0px, 300px);
     filter: drop-shadow(2px 2px 0.1rem rgb(49, 0, 10));
 
     /* Las fotos no tienen que estar cuando aparecen los Shorts */
-
     @media (min-width: 1201px) {
             display: none;
     }
 
+    /* Efecto para las fotos de las integrantes */
     &:hover {
         opacity: 90%;
     }
 
 }
 
+/* Tamaño íconos de redes sociales dentro de la card de cada integrante */
 section {
     div {
         div{

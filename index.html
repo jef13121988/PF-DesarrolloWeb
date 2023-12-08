@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
     <title>Scandal</title>
+    <!-- Descripción de la página -->
     <meta name="description" content="Sitio web promotor de la banda japonesa Scandal en Argentina">
     <!-- FavIcon -->
     <link rel="icon" href="img/favicon.ico">
@@ -37,15 +39,19 @@
             </nav>
         </div>
     </header>
+    <!-- Fin de NavBar Bootstrap -->
 
+    <!-- Introducción a la página -->
     <main>
-        <div>
-            <h1>Scandal</h1>
-            <h2>Sitio web promotor de la banda japonesa Scandal en Argentina</h2>
-        </div>
 
+        <h1>Scandal</h1>
+
+        <h2>Sitio web promotor de la banda japonesa Scandal en Argentina</h2>
+
+        <!-- Primera Sección con las imágenes, en formato carousel y sueltas -->
         <!-- Carousel que se visualiza hasta 991px -->
-        <div id="carouselExampleAutoplaying" class="carousel slide d-md-block d-lg-none mx-4" data-bs-ride="carousel">
+        <section id="carouselExampleAutoplaying" class="carousel slide d-md-block d-lg-none mx-4"
+            data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/foto-2.jpg" class="d-block w-100 fotoVivo"
@@ -70,19 +76,26 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
+        </section>
+        <!-- Fin del Carousel -->
 
         <!-- 3 imágenes visualizadas a partir de 992px -->
-        <div class="cajaFotos d-none d-md-none d-lg-block mx-4">
+        <section class="cajaFotos d-none d-md-none d-lg-block mx-4">
             <img class="fotoVivo" src="img/foto-1.jpg" alt="Foto del Vivo por el Récord Guinness de la banda 1">
             <img class="fotoVivo" src="img/foto-2.jpg" alt="Foto del Vivo por el Récord Guinness de la banda 2">
             <img class="fotoVivo" src="img/foto-3.jpg" alt="Foto del Vivo por el Récord Guinness de la banda 3">
-        </div>
+        </section>
+        <!-- Fin del contenedor de las 3 imágenes -->
 
+        <!-- Fin de Primera Sección con las imágenes, en formato carousel y sueltas -->
+
+        <!-- Segunda Sección con un breve párrafo explicativo y una foto -->
         <section class="mx-4 mt-4 row">
+
+            <!-- Utilizo la clase artículo para juntar un pequeño título con un párrafo explicativo -->
             <article
                 class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex flex-column text-center justify-content-center">
-                <h2>¿Qué es Scandal?</h2>
+                <h3>¿Qué es Scandal?</h3>
 
                 <p class="parrafo">Scandal es una banda japonesa fundada en Osaka en el año 2006 cuyas integrantes
                     son Haruna (cantante y guitarrista), Mami (guitarrista y cantante), Tomomi (bajista y cantante) y
@@ -96,8 +109,10 @@
             </aside>
 
         </section>
+        <!-- Fin de Segunda Sección con un breve párrafo explicativo y una foto -->
 
     </main>
+    <!-- Fin de Introducción a la página -->
 
     <!-- Footer -->
     <footer class="d-flex justify-content-between">
@@ -120,6 +135,7 @@
         <p>By Jonás | 2023</p>
 
     </footer>
+    <!-- Fin de Footer -->
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
