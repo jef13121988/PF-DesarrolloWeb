@@ -17,12 +17,23 @@ header {
                         text-decoration: none;
                         text-transform: uppercase;
                         font-weight: bold;
+                        font-size: 1.25rem;
                         color: $color-textos;
                         padding: 0.5rem 0.5rem;
                         transition: all 1s;
 
                         &:hover {
                             @include listaHover($fondo-hover);
+                        }
+
+                        /* Se achica el tamaño de la fuente del navbar por debajo de los 1000px */
+                        @media (max-width: 1000px) {
+                            font-size: 1rem;
+                        }
+
+                        /* Se achica el tamaño de la fuente del navbar por debajo de los 800px */
+                        @media (max-width: 800px) {
+                            font-size: 0.9rem;
                         }
 
                     }
