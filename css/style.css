@@ -160,7 +160,7 @@ h1 {
   }
 }
 
-h2, h3 {
+h2 {
   color: white;
   text-align: center;
   font-weight: bold;
@@ -171,7 +171,7 @@ h2, h3 {
   /* Se ajusta el tamaño de la fuente para pantallas menores a 440px */
 }
 @media (max-width: 440px) {
-  h2, h3 {
+  h2 {
     font-size: 1.15rem;
   }
 }
@@ -285,6 +285,23 @@ footer p {
 /* Clase para el contenedor de las fotos */
 .cajaFotos {
   text-align: center;
+}
+
+/* Clase para subtítulo h3 */
+.subtitulo {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-image: radial-gradient(ellipse 40% 50%, black, #28282B);
+  /* Se ajusta el tamaño de la fuente para pantallas menores a 440px */
+}
+@media (max-width: 440px) {
+  .subtitulo {
+    font-size: 1.15rem;
+  }
 }
 
 /* Sobre Scandal */

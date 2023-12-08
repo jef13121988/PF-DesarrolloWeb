@@ -16,3 +16,17 @@
 .cajaFotos {
     text-align: center;
 }
+
+/* Clase para subtítulo h3 */
+.subtitulo {
+    @include estiloH(2rem);
+    padding: 1rem;
+    margin-top: 2rem;
+    background-image: radial-gradient(ellipse 40% 50%, black, $fondo-body);
+    
+    /* Se ajusta el tamaño de la fuente para pantallas menores a 440px */
+    @media(max-width:440px) {
+        font-size: 1.15rem;
+    }
+
+}
